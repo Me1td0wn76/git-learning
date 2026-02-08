@@ -25,6 +25,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Copy docs to src
+        run: cp -r docs src/docs
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
